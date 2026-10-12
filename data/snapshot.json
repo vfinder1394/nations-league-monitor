@@ -2,7 +2,7 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-10-08T00:44:36Z",
+ "updatedAt": "2026-10-12T09:39:51Z",
  "asOf": "Nach Spieltag 4 (104/156 Spiele beendet)",
  "dataSource": "uefa",
  "source": [
@@ -1571,7 +1571,7 @@
        "away": "HUN",
        "hs": null,
        "as": null,
-       "venue": "Boris-Paitschadse-Stadion, Tiflis"
+       "venue": "Mikheil Meskhi I Stadium, Tiflis"
       },
       {
        "id": "2047897",
