@@ -2,7 +2,7 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-10-12T09:39:51Z",
+ "updatedAt": "2026-10-29T16:07:25Z",
  "asOf": "Nach Spieltag 4 (104/156 Spiele beendet)",
  "dataSource": "uefa",
  "source": [
@@ -1330,7 +1330,7 @@
        "away": "SUI",
        "hs": null,
        "as": null,
-       "venue": "Stadion Stožice, Ljubljana"
+       "venue": "Stadion Ljudski vrt, Maribor"
       },
       {
        "id": "2047914",
