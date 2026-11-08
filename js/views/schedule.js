@@ -66,8 +66,6 @@ export function renderSchedule(model, md, leagueFilter) {
 
     ${summary(model, list, scope, info)}
 
-    ${highlights(model, list, info, md)}
-
     ${list.length ? [...byDate.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([date, ms], di, dayList) => {
       const allDone = ms.every((m) => m.status === 'FINISHED');
       const anyLive = ms.some((m) => m.status === 'LIVE');
@@ -129,38 +127,6 @@ function summary(model, list, scope, info) {
 function decisiveCell(n, plural, singular) {
   return `<div class="md-summary__cell kpi--info" tabindex="0" data-tip-title="Kann entscheiden" data-tip="${esc(STAKE_TIP)}"><b class="md-summary__val">${n}</b><span class="md-summary__cap">${n === 1 ? singular : plural}${INFO_SM}</span></div>`;
 }
-
-/** Topspiel je Gruppe (nach Tabellenlage) – aufklappbar, auf schmalen Bildschirmen zunächst zu. */
-function highlights(model, list, info, md) {
-  const tops = list.filter((m) => info.get(m)?.top).sort((a, b) => a.group.localeCompare(b.group));
-  // Beendeter Spieltag: keine Vorschau mehr (der Stern an den Spielen bleibt)
-  if (!tops.length || list.every((m) => m.status === 'FINISHED')) return '';
-  const wide = typeof matchMedia === 'function' && matchMedia('(min-width: 721px)').matches;
-  const decisive = tops.filter((m) => info.get(m).stakes.length).length;
-  const pos = (t) => `<small><span class="sr-only">, Tabellenplatz </span>${t.row.pos}.</small>`;
-  return `<details class="tops"${wide ? ' open' : ''}>
-    <summary class="tops__title"><span class="tops__title-main">${STAR}<span>Topspiele je Gruppe</span></span><span class="tops__count">${tops.length} Spiele${decisive ? ` · ${decisive} ${decisive === 1 ? 'kann' : 'können'} entscheiden` : ''}</span><svg class="tops__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
-    <p class="tops__legend"><span class="tops__key tops__key--star">${STAR}Topspiel: das Spiel jeder Gruppe mit der spannendsten Tabellenlage</span><span class="tops__key">${BOLT}Kann entscheiden: das Ergebnis allein legt etwas fest</span>${md > currentMd(model) ? `<span class="tops__asof">Stand vor Spieltag ${md} – frühere offene Spiele können noch etwas ändern.</span>` : ''}</p>
-    <ul class="tops__list">
-      ${tops.map((m) => {
-        const h = model.teams[m.home], a = model.teams[m.away];
-        const st = info.get(m).stakes;
-        return `<li class="top">
-          <a class="match__group match__group--${m.league}" href="#/tabellen/${m.league}/${m.group}" aria-label="Tabelle Gruppe ${m.group}"><span>${m.group[0]}</span>${m.group.slice(1)}</a>
-          <span class="top__pair">
-            <button type="button" class="top__team" data-team="${esc(h.code)}">${flag(h)}${teamName(h)}${pos(h)}</button>
-            <span class="top__vs" aria-hidden="true">–</span>
-            <button type="button" class="top__team" data-team="${esc(a.code)}">${flag(a)}${teamName(a)}${pos(a)}</button>
-          </span>
-          <span class="top__when">${fmtWeekShort(m.date)} ${fmtShort(m.date)}${m.kickoff ? ` · ${fmtTime(m.kickoff)}` : ''}</span>
-          ${st.length ? `<span class="top__stake">${stakeList(model, st)}</span>` : ''}
-        </li>`;
-      }).join('')}
-    </ul>
-  </details>`;
-}
-
-const currentMd = (model) => defaultMatchday(model);
 
 /** Aussagen als Liste: „Frankreich: Schon mit einem Remis ist das Viertelfinale sicher.“ Team zuerst, damit Artikel und Plural nie stören. */
 function stakeList(model, stakes) {
