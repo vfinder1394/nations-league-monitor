@@ -4,23 +4,19 @@ import { positionRanges, isFinished } from './standings.js';
 /**
  * Tabellengrenzen, an denen sich je Liga die Folge ändert (Plätze ≤ cut gegenüber > cut).
  * yes/no sind Satzreste für „rechnerisch geschafft“ bzw. „rechnerisch verpasst“; stakeSentence() setzt
- * daraus mit dem nötigen Ergebnis einen ganzen Satz zusammen („Mit einem Sieg ist … sicher.“).
+ * daraus mit dem nötigen Ergebnis einen kurzen, einzeiligen Satz zusammen („Mit einem Sieg ist … sicher.“).
  * Liga A, Platz 3/4: Ob Klassenerhalt, Play-off oder Abstieg folgt, entscheidet erst der Vergleich
  * der Gruppen – innerhalb der Gruppe steht nur fest, ob ein Team Letzter wird.
  * Liga D: Alle Teams steigen auf – nichts zu entscheiden.
  */
 const CUTS = {
-  A: [{ cut: 2, yes: 'ist das Viertelfinale sicher', no: 'ist das Viertelfinale nicht mehr erreichbar' },
-    { cut: 3, yes: 'kann das Team nicht mehr Gruppenletzter werden und steigt damit nicht direkt ab',
-      no: 'steht Platz 4 in der Gruppe fest, dann droht das Play-off A/B oder sogar der direkte Abstieg', low: true }],
-  B: [{ cut: 1, yes: 'ist der direkte Aufstieg in Liga A sicher', no: 'ist der direkte Aufstieg nicht mehr möglich' },
-    { cut: 2, yes: 'ist mindestens Platz 2 sicher und damit wenigstens das Play-off um den Aufstieg in Liga A',
-      no: 'ist auch Platz 2 nicht mehr erreichbar, ein Aufstieg ist dann ausgeschlossen' },
-    { cut: 3, yes: 'ist der Klassenerhalt in Liga B sicher',
-      no: 'steht Platz 4 in der Gruppe fest, dann geht es im Play-off B/C um den Klassenerhalt', low: true }],
-  C: [{ cut: 1, yes: 'ist der direkte Aufstieg in Liga B sicher', no: 'ist der direkte Aufstieg nicht mehr möglich' },
-    { cut: 2, yes: 'ist mindestens Platz 2 sicher und damit wenigstens das Play-off um den Aufstieg in Liga B',
-      no: 'ist auch Platz 2 nicht mehr erreichbar, ein Aufstieg ist dann ausgeschlossen' }],
+  A: [{ cut: 2, yes: 'ist das Viertelfinale sicher', no: 'ist das Viertelfinale verpasst' },
+    { cut: 3, yes: 'ist der direkte Abstieg abgewendet', no: 'bleibt nur Platz 4 – Play-off oder Abstieg', low: true }],
+  B: [{ cut: 1, yes: 'ist der Aufstieg sicher', no: 'ist der direkte Aufstieg verpasst' },
+    { cut: 2, yes: 'ist mindestens das Aufstiegs-Play-off sicher', no: 'ist der Aufstieg verpasst' },
+    { cut: 3, yes: 'ist der Klassenerhalt sicher', no: 'muss das Team ins Abstiegs-Play-off', low: true }],
+  C: [{ cut: 1, yes: 'ist der Aufstieg sicher', no: 'ist der direkte Aufstieg verpasst' },
+    { cut: 2, yes: 'ist mindestens das Aufstiegs-Play-off sicher', no: 'ist der Aufstieg verpasst' }],
 };
 
 // Ergebnis aus Sicht des Heimteams: Sieg, Remis, Niederlage
