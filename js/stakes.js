@@ -2,20 +2,25 @@
 import { positionRanges, isFinished } from './standings.js';
 
 /**
- * Tabellengrenzen, an denen sich je Liga die Folge ändert (Plätze ≤ cut gegenüber > cut),
- * mit neutraler Formulierung für „rechnerisch geschafft“ (yes) und „rechnerisch verpasst“ (no).
+ * Tabellengrenzen, an denen sich je Liga die Folge ändert (Plätze ≤ cut gegenüber > cut).
+ * yes/no sind Satzreste für „rechnerisch geschafft“ bzw. „rechnerisch verpasst“; stakeSentence() setzt
+ * daraus mit dem nötigen Ergebnis einen ganzen Satz zusammen („Mit einem Sieg ist … sicher.“).
  * Liga A, Platz 3/4: Ob Klassenerhalt, Play-off oder Abstieg folgt, entscheidet erst der Vergleich
  * der Gruppen – innerhalb der Gruppe steht nur fest, ob ein Team Letzter wird.
  * Liga D: Alle Teams steigen auf – nichts zu entscheiden.
  */
 const CUTS = {
-  A: [{ cut: 2, yes: 'Viertelfinale sicher', no: 'Viertelfinale verpasst' },
-    { cut: 3, yes: 'Platz 4 abgewendet', no: 'Platz 4 steht fest', low: true }],
-  B: [{ cut: 1, yes: 'Aufstieg sicher', no: 'Direkter Aufstieg verpasst' },
-    { cut: 2, yes: 'Mindestens Play-off A/B sicher', no: 'Play-off A/B verpasst' },
-    { cut: 3, yes: 'Klassenerhalt sicher', no: 'Play-off B/C steht fest', low: true }],
-  C: [{ cut: 1, yes: 'Aufstieg sicher', no: 'Direkter Aufstieg verpasst' },
-    { cut: 2, yes: 'Mindestens Play-off B/C sicher', no: 'Play-off B/C verpasst' }],
+  A: [{ cut: 2, yes: 'ist das Viertelfinale sicher', no: 'ist das Viertelfinale nicht mehr erreichbar' },
+    { cut: 3, yes: 'kann das Team nicht mehr Gruppenletzter werden und steigt damit nicht direkt ab',
+      no: 'steht Platz 4 in der Gruppe fest, dann droht das Play-off A/B oder sogar der direkte Abstieg', low: true }],
+  B: [{ cut: 1, yes: 'ist der direkte Aufstieg in Liga A sicher', no: 'ist der direkte Aufstieg nicht mehr möglich' },
+    { cut: 2, yes: 'ist mindestens Platz 2 sicher und damit wenigstens das Play-off um den Aufstieg in Liga A',
+      no: 'ist auch Platz 2 nicht mehr erreichbar, ein Aufstieg ist dann ausgeschlossen' },
+    { cut: 3, yes: 'ist der Klassenerhalt in Liga B sicher',
+      no: 'steht Platz 4 in der Gruppe fest, dann geht es im Play-off B/C um den Klassenerhalt', low: true }],
+  C: [{ cut: 1, yes: 'ist der direkte Aufstieg in Liga B sicher', no: 'ist der direkte Aufstieg nicht mehr möglich' },
+    { cut: 2, yes: 'ist mindestens Platz 2 sicher und damit wenigstens das Play-off um den Aufstieg in Liga B',
+      no: 'ist auch Platz 2 nicht mehr erreichbar, ein Aufstieg ist dann ausgeschlossen' }],
 };
 
 // Ergebnis aus Sicht des Heimteams: Sieg, Remis, Niederlage
@@ -127,7 +132,12 @@ export function analyzeMatches(model, list) {
   return info;
 }
 
-/** Ergebnis, das für eine Aussage reicht – aus Sicht des genannten Teams. */
-export function conditionText(s) {
-  return s.kind === 'yes' ? (s.result === 'D' ? 'Remis reicht' : 'mit Sieg') : (s.result === 'D' ? 'schon bei Remis' : 'bei Niederlage');
+/**
+ * Aussage als ganzer Satz aus Sicht des genannten Teams, z. B.
+ * „Schon mit einem Remis ist das Viertelfinale sicher.“ oder
+ * „Bei einer Niederlage ist der direkte Aufstieg nicht mehr möglich.“
+ */
+export function stakeSentence(s) {
+  if (s.kind === 'yes') return s.result === 'D' ? `Schon mit einem Remis ${s.text}.` : `Mit einem Sieg ${s.text}.`;
+  return s.result === 'D' ? `Schon bei einem Remis ${s.text}.` : `Bei einer Niederlage ${s.text}.`;
 }

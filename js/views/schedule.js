@@ -1,6 +1,6 @@
 import { esc, flag, scoreCell, fmtDay, fmtDayShort, fmtRange, fmtTime, fmtShort, fmtWeekShort, teamName } from '../ui.js';
 import { todayBerlin } from '../data.js';
-import { analyzeMatches, conditionText } from '../stakes.js';
+import { analyzeMatches, stakeSentence } from '../stakes.js';
 
 const LEAGUE_FILTERS = [['alle', 'Alle'], ['A', 'Liga A'], ['B', 'Liga B'], ['C', 'Liga C'], ['D', 'Liga D']];
 const CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12.5l4 4 9-9"/></svg>';
@@ -162,9 +162,9 @@ function highlights(model, list, info, md) {
 
 const currentMd = (model) => defaultMatchday(model);
 
-/** Aussagen als Liste: „Frankreich: Viertelfinale sicher – Remis reicht“. Team zuerst, damit Artikel und Plural nie stören. */
+/** Aussagen als Liste: „Frankreich: Schon mit einem Remis ist das Viertelfinale sicher.“ Team zuerst, damit Artikel und Plural nie stören. */
 function stakeList(model, stakes) {
-  return stakes.map((x) => `<span class="stake">${BOLT}<span><b>${esc(model.teams[x.team].name)}:</b> ${esc(x.text)} – ${esc(conditionText(x))}</span></span>`).join('');
+  return stakes.map((x) => `<span class="stake">${BOLT}<span><b>${esc(model.teams[x.team].name)}:</b> ${esc(stakeSentence(x))}</span></span>`).join('');
 }
 
 function emptyState(model, md, leagueFilter) {
