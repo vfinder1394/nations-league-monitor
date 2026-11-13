@@ -2,8 +2,8 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-11-12T19:59:02Z",
- "asOf": "Live: 6 Spiel(e) laufen · 106/156 beendet",
+ "updatedAt": "2026-11-13T01:52:17Z",
+ "asOf": "Nach Spieltag 4 (112/156 Spiele beendet)",
  "dataSource": "uefa",
  "source": [
   "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/",
@@ -294,13 +294,12 @@
        "md": 5,
        "date": "2026-11-12",
        "kickoff": "2026-11-12T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "ITA",
        "away": "FRA",
-       "hs": 0,
+       "hs": 3,
        "as": 1,
-       "venue": "Stadio San Siro, Mailand",
-       "minute": "12'"
+       "venue": "Stadio San Siro, Mailand"
       },
       {
        "id": "2047873",
@@ -342,18 +341,30 @@
      "table": [
       {
        "pos": 1,
-       "code": "FRA",
+       "code": "ITA",
        "p": 5,
-       "w": 4,
+       "w": 3,
        "d": 1,
-       "l": 0,
-       "gf": 8,
-       "ga": 2,
-       "gd": 6,
-       "pts": 13
+       "l": 1,
+       "gf": 11,
+       "ga": 6,
+       "gd": 5,
+       "pts": 10
       },
       {
        "pos": 2,
+       "code": "FRA",
+       "p": 5,
+       "w": 3,
+       "d": 1,
+       "l": 1,
+       "gf": 8,
+       "ga": 5,
+       "gd": 3,
+       "pts": 10
+      },
+      {
+       "pos": 3,
        "code": "BEL",
        "p": 5,
        "w": 3,
@@ -363,18 +374,6 @@
        "ga": 6,
        "gd": 2,
        "pts": 9
-      },
-      {
-       "pos": 3,
-       "code": "ITA",
-       "p": 5,
-       "w": 2,
-       "d": 1,
-       "l": 2,
-       "gf": 8,
-       "ga": 6,
-       "gd": 2,
-       "pts": 7
       },
       {
        "pos": 4,
@@ -392,16 +391,16 @@
      "uefaId": "2014191",
      "official": {
       "order": [
+       "ITA",
        "FRA",
        "BEL",
-       "ITA",
        "TUR"
       ],
       "played": 20,
       "points": {
-       "FRA": 13,
+       "ITA": 10,
+       "FRA": 10,
        "BEL": 9,
-       "ITA": 7,
        "TUR": 0
       }
      }
@@ -802,26 +801,24 @@
        "md": 5,
        "date": "2026-11-12",
        "kickoff": "2026-11-12T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "ENG",
        "away": "CRO",
-       "hs": 0,
-       "as": 0,
-       "venue": "Wembley Stadium, London",
-       "minute": "13'"
+       "hs": 2,
+       "as": 1,
+       "venue": "Wembley Stadium, London"
       },
       {
        "id": "2047872",
        "md": 5,
        "date": "2026-11-12",
        "kickoff": "2026-11-12T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "CZE",
        "away": "ESP",
        "hs": 0,
-       "as": 0,
-       "venue": "Stadion Letná, Prag",
-       "minute": "13'"
+       "as": 2,
+       "venue": "Stadion Letná, Prag"
       },
       {
        "id": "2047904",
@@ -853,49 +850,49 @@
        "pos": 1,
        "code": "ESP",
        "p": 5,
-       "w": 4,
-       "d": 1,
+       "w": 5,
+       "d": 0,
        "l": 0,
-       "gf": 12,
+       "gf": 14,
        "ga": 5,
-       "gd": 7,
-       "pts": 13
+       "gd": 9,
+       "pts": 15
       },
       {
        "pos": 2,
        "code": "ENG",
        "p": 5,
-       "w": 3,
-       "d": 1,
+       "w": 4,
+       "d": 0,
        "l": 1,
-       "gf": 14,
-       "ga": 3,
-       "gd": 11,
-       "pts": 10
+       "gf": 16,
+       "ga": 4,
+       "gd": 12,
+       "pts": 12
       },
       {
        "pos": 3,
        "code": "CRO",
        "p": 5,
        "w": 1,
-       "d": 1,
-       "l": 3,
-       "gf": 4,
-       "ga": 14,
-       "gd": -10,
-       "pts": 4
+       "d": 0,
+       "l": 4,
+       "gf": 5,
+       "ga": 16,
+       "gd": -11,
+       "pts": 3
       },
       {
        "pos": 4,
        "code": "CZE",
        "p": 5,
        "w": 0,
-       "d": 1,
-       "l": 4,
+       "d": 0,
+       "l": 5,
        "gf": 2,
-       "ga": 10,
-       "gd": -8,
-       "pts": 1
+       "ga": 12,
+       "gd": -10,
+       "pts": 0
       }
      ],
      "uefaId": "2014193",
@@ -908,10 +905,10 @@
       ],
       "played": 20,
       "points": {
-       "ESP": 13,
-       "ENG": 10,
-       "CRO": 4,
-       "CZE": 1
+       "ESP": 15,
+       "ENG": 12,
+       "CRO": 3,
+       "CZE": 0
       }
      }
     },
@@ -2334,26 +2331,24 @@
        "md": 5,
        "date": "2026-11-12",
        "kickoff": "2026-11-12T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "ALB",
        "away": "FIN",
-       "hs": 0,
+       "hs": 2,
        "as": 0,
-       "venue": "Arena Kombëtare, Tirana",
-       "minute": "13'"
+       "venue": "Arena Kombëtare, Tirana"
       },
       {
        "id": "2047877",
        "md": 5,
        "date": "2026-11-12",
        "kickoff": "2026-11-12T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "SMR",
        "away": "BLR",
        "hs": 0,
-       "as": 1,
-       "venue": "San Marino Stadium, Serravalle",
-       "minute": "15'"
+       "as": 2,
+       "venue": "San Marino Stadium, Serravalle"
       },
       {
        "id": "2047905",
@@ -2385,13 +2380,13 @@
        "pos": 1,
        "code": "ALB",
        "p": 5,
-       "w": 3,
-       "d": 1,
+       "w": 4,
+       "d": 0,
        "l": 1,
-       "gf": 8,
+       "gf": 10,
        "ga": 3,
-       "gd": 5,
-       "pts": 10
+       "gd": 7,
+       "pts": 12
       },
       {
        "pos": 2,
@@ -2400,9 +2395,9 @@
        "w": 3,
        "d": 1,
        "l": 1,
-       "gf": 6,
+       "gf": 7,
        "ga": 2,
-       "gd": 4,
+       "gd": 5,
        "pts": 10
       },
       {
@@ -2410,12 +2405,12 @@
        "code": "FIN",
        "p": 5,
        "w": 2,
-       "d": 2,
-       "l": 1,
+       "d": 1,
+       "l": 2,
        "gf": 9,
-       "ga": 2,
-       "gd": 7,
-       "pts": 8
+       "ga": 4,
+       "gd": 5,
+       "pts": 7
       },
       {
        "pos": 4,
@@ -2425,8 +2420,8 @@
        "d": 0,
        "l": 5,
        "gf": 1,
-       "ga": 17,
-       "gd": -16,
+       "ga": 18,
+       "gd": -17,
        "pts": 0
       }
      ],
@@ -2440,9 +2435,9 @@
       ],
       "played": 20,
       "points": {
-       "ALB": 10,
+       "ALB": 12,
        "BLR": 10,
-       "FIN": 8,
+       "FIN": 7,
        "SMR": 0
       }
      }
@@ -2601,13 +2596,12 @@
        "md": 5,
        "date": "2026-11-12",
        "kickoff": "2026-11-12T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "MNE",
        "away": "LVA",
-       "hs": 0,
-       "as": 0,
-       "venue": "Gradski Stadion, Podgorica",
-       "minute": "13'"
+       "hs": 2,
+       "as": 1,
+       "venue": "Gradski Stadion, Podgorica"
       },
       {
        "id": "2047903",
@@ -2639,13 +2633,13 @@
        "pos": 1,
        "code": "MNE",
        "p": 5,
-       "w": 3,
-       "d": 2,
+       "w": 4,
+       "d": 1,
        "l": 0,
-       "gf": 7,
-       "ga": 4,
-       "gd": 3,
-       "pts": 11
+       "gf": 9,
+       "ga": 5,
+       "gd": 4,
+       "pts": 13
       },
       {
        "pos": 2,
@@ -2676,12 +2670,12 @@
        "code": "LVA",
        "p": 5,
        "w": 0,
-       "d": 2,
-       "l": 3,
-       "gf": 2,
-       "ga": 6,
-       "gd": -4,
-       "pts": 2
+       "d": 1,
+       "l": 4,
+       "gf": 3,
+       "ga": 8,
+       "gd": -5,
+       "pts": 1
       }
      ],
      "uefaId": "2014200",
@@ -2694,10 +2688,10 @@
       ],
       "played": 20,
       "points": {
-       "MNE": 11,
+       "MNE": 13,
        "CYP": 8,
        "ARM": 5,
-       "LVA": 2
+       "LVA": 1
       }
      }
     },
