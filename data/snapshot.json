@@ -2,8 +2,8 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-11-14T01:28:19Z",
- "asOf": "Nach Spieltag 4 (122/156 Spiele beendet)",
+ "updatedAt": "2026-11-14T18:10:32Z",
+ "asOf": "Live: 2 Spiel(e) laufen · 123/156 beendet",
  "dataSource": "uefa",
  "source": [
   "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/",
@@ -1054,12 +1054,13 @@
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T17:00:00Z",
-       "status": "UPCOMING",
+       "status": "LIVE",
        "home": "NOR",
        "away": "WAL",
-       "hs": null,
-       "as": null,
-       "venue": "Ullevaal Stadion, Oslo"
+       "hs": 0,
+       "as": 0,
+       "venue": "Ullevaal Stadion, Oslo",
+       "minute": "53'"
       },
       {
        "id": "2047892",
@@ -1126,26 +1127,26 @@
       {
        "pos": 3,
        "code": "WAL",
-       "p": 4,
+       "p": 5,
        "w": 1,
-       "d": 0,
+       "d": 1,
        "l": 3,
        "gf": 2,
        "ga": 5,
        "gd": -3,
-       "pts": 3
+       "pts": 4
       },
       {
        "pos": 4,
        "code": "NOR",
-       "p": 4,
+       "p": 5,
        "w": 1,
-       "d": 0,
+       "d": 1,
        "l": 3,
        "gf": 6,
        "ga": 8,
        "gd": -2,
-       "pts": 3
+       "pts": 4
       }
      ],
      "uefaId": "2014194",
@@ -1156,12 +1157,12 @@
        "WAL",
        "NOR"
       ],
-      "played": 16,
+      "played": 18,
       "points": {
        "POR": 12,
        "DEN": 6,
-       "WAL": 3,
-       "NOR": 3
+       "WAL": 4,
+       "NOR": 4
       }
      }
     }
@@ -1566,12 +1567,13 @@
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T17:00:00Z",
-       "status": "UPCOMING",
+       "status": "LIVE",
        "home": "GEO",
        "away": "HUN",
-       "hs": null,
-       "as": null,
-       "venue": "Mikheil Meskhi I Stadium, Tiflis"
+       "hs": 0,
+       "as": 0,
+       "venue": "Mikheil Meskhi I Stadium, Tiflis",
+       "minute": "52'"
       },
       {
        "id": "2047897",
@@ -1626,14 +1628,14 @@
       {
        "pos": 2,
        "code": "HUN",
-       "p": 4,
+       "p": 5,
        "w": 2,
-       "d": 1,
+       "d": 2,
        "l": 1,
        "gf": 3,
        "ga": 2,
        "gd": 1,
-       "pts": 7
+       "pts": 8
       },
       {
        "pos": 3,
@@ -1650,14 +1652,14 @@
       {
        "pos": 4,
        "code": "GEO",
-       "p": 4,
+       "p": 5,
        "w": 0,
-       "d": 2,
+       "d": 3,
        "l": 2,
        "gf": 0,
        "ga": 2,
        "gd": -2,
-       "pts": 2
+       "pts": 3
       }
      ],
      "uefaId": "2014196",
@@ -1668,12 +1670,12 @@
        "UKR",
        "GEO"
       ],
-      "played": 16,
+      "played": 18,
       "points": {
        "NIR": 8,
-       "HUN": 7,
+       "HUN": 8,
        "UKR": 4,
-       "GEO": 2
+       "GEO": 3
       }
      }
     },
@@ -1819,11 +1821,11 @@
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T14:00:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "KOS",
        "away": "ISR",
-       "hs": null,
-       "as": null,
+       "hs": 0,
+       "as": 0,
        "venue": "Stadiumi Fadil Vokrri, Pristina"
       },
       {
@@ -1879,14 +1881,14 @@
       {
        "pos": 2,
        "code": "KOS",
-       "p": 4,
+       "p": 5,
        "w": 1,
-       "d": 2,
+       "d": 3,
        "l": 1,
        "gf": 3,
        "ga": 4,
        "gd": -1,
-       "pts": 5
+       "pts": 6
       },
       {
        "pos": 3,
@@ -1903,14 +1905,14 @@
       {
        "pos": 4,
        "code": "ISR",
-       "p": 4,
+       "p": 5,
        "w": 0,
-       "d": 2,
+       "d": 3,
        "l": 2,
        "gf": 2,
        "ga": 7,
        "gd": -5,
-       "pts": 2
+       "pts": 3
       }
      ],
      "uefaId": "2014197",
@@ -1921,12 +1923,12 @@
        "IRL",
        "ISR"
       ],
-      "played": 16,
+      "played": 18,
       "points": {
        "AUT": 8,
-       "KOS": 5,
+       "KOS": 6,
        "IRL": 5,
-       "ISR": 2
+       "ISR": 3
       }
      }
     },
