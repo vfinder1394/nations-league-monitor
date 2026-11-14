@@ -16,11 +16,17 @@ const INFO = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12
  * damit Live-Aktualisierungen (Neu-Rendern) die Wahl nicht zurücksetzen. Schlüssel: „Spieltag|Datum“.
  */
 const dayChoice = new Map();
-export function rememberDayToggle(el) {
-  const key = el.dataset.dayKey;
-  if (!key) return;
-  const def = el.dataset.dayDefault === 'open';
-  if (el.open === def) dayChoice.delete(key); else dayChoice.set(key, el.open);
+/** Klick auf einen Tageskopf: Liste ein-/ausblenden und Wahl merken. */
+export function toggleDay(btn) {
+  const sec = btn.closest('.day');
+  const list = sec?.querySelector('.match-list');
+  if (!list) return;
+  const open = list.hidden;
+  list.hidden = !open;
+  sec.classList.toggle('is-collapsed', !open);
+  btn.setAttribute('aria-expanded', String(open));
+  const key = sec.dataset.dayKey;
+  if (open === (sec.dataset.dayDefault === 'open')) dayChoice.delete(key); else dayChoice.set(key, open);
 }
 
 export function defaultMatchday(model) {
@@ -99,13 +105,14 @@ export function renderSchedule(model, md, leagueFilter) {
       const defOpen = !(mdRunning && allDone && date < today);
       const key = `${md}|${date}`;
       const open = dayChoice.has(key) ? dayChoice.get(key) : defOpen;
+      const listId = `day-${md}-${date}`;
       return `
-      <details class="day" data-day-key="${key}" data-day-default="${defOpen ? 'open' : 'closed'}"${open ? ' open' : ''}>
-        <summary class="day__head"><h3 class="day__date"><b><span class="day__date-long">${esc(fmtDay(date))}</span><span class="day__date-short" aria-hidden="true">${esc(fmtDayShort(date))}</span></b></h3><span class="day__count">${pill}<span class="day__pill day__pill--count">${ms.length}&nbsp;${ms.length === 1 ? 'Spiel' : 'Spiele'}</span><svg class="chev day__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary>
-        <ul class="match-list${withVenue ? ' has-venue' : ''}">
+      <section class="day${open ? '' : ' is-collapsed'}" aria-label="${esc(fmtDay(date))}" data-day-key="${key}" data-day-default="${defOpen ? 'open' : 'closed'}">
+        <h3 class="day__head"><button type="button" class="day__toggle" data-day-toggle aria-expanded="${open}" aria-controls="${listId}"><span class="day__date"><b><span class="day__date-long">${esc(fmtDay(date))}</span><span class="day__date-short" aria-hidden="true">${esc(fmtDayShort(date))}</span></b></span></button><span class="day__count">${pill}<span class="day__pill day__pill--count">${ms.length}&nbsp;${ms.length === 1 ? 'Spiel' : 'Spiele'}</span><svg class="chev day__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></h3>
+        <ul class="match-list${withVenue ? ' has-venue' : ''}" id="${listId}"${open ? '' : ' hidden'}>
           ${ms.map((m) => matchRow(model, m, { venue: withVenue, info: info.get(m) })).join('')}
         </ul>
-      </details>`;
+      </section>`;
     }).join('') : emptyState(model, md, leagueFilter)}
   </section>`;
 }
