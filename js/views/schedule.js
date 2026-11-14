@@ -11,6 +11,18 @@ const BOLT = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h
 const PIN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>';
 const INFO = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.1"/></svg>';
 
+/**
+ * Auf-/Zugeklappte Spieltage (Donnerstag, Freitag …): nur Abweichungen vom Standard werden gemerkt,
+ * damit Live-Aktualisierungen (Neu-Rendern) die Wahl nicht zurücksetzen. Schlüssel: „Spieltag|Datum“.
+ */
+const dayChoice = new Map();
+export function rememberDayToggle(el) {
+  const key = el.dataset.dayKey;
+  if (!key) return;
+  const def = el.dataset.dayDefault === 'open';
+  if (el.open === def) dayChoice.delete(key); else dayChoice.set(key, el.open);
+}
+
 export function defaultMatchday(model) {
   const open = model.matches.filter((m) => m.status !== 'FINISHED');
   if (!open.length) return 6;
@@ -30,6 +42,10 @@ export function renderSchedule(model, md, leagueFilter) {
   const info = analyzeMatches(model, list);
   // Die Vorschau-Kopfzeile nennt den Abstand („in 35 Tagen“) bereits – dann keine Wiederholung am Tageskopf
   const summaryHasWhen = list.length > 0 && list.every((m) => m.status === 'UPCOMING');
+  // Vergangene, komplett beendete Tage starten zugeklappt – aber nur, solange der Spieltag noch läuft
+  // (ein abgeschlossener Spieltag zeigt alle Tage offen); offene Tage des Spieltags bleiben immer offen
+  const today = todayBerlin();
+  const mdRunning = list.some((m) => m.status !== 'FINISHED');
 
   return `
   <section class="section" aria-labelledby="sched-title">
@@ -80,13 +96,16 @@ export function renderSchedule(model, md, leagueFilter) {
         : firstOpen && !summaryHasWhen ? `<span class="day__pill day__pill--when">${when}</span>` : '';
       // Spielort-Spalte nur, wenn er für mindestens die Hälfte der Spiele des Tages bekannt ist (keine halb leere Spalte)
       const withVenue = ms.filter((m) => m.venue).length * 2 >= ms.length;
+      const defOpen = !(mdRunning && allDone && date < today);
+      const key = `${md}|${date}`;
+      const open = dayChoice.has(key) ? dayChoice.get(key) : defOpen;
       return `
-      <section class="day" aria-label="${esc(fmtDay(date))}">
-        <h3 class="day__head"><span class="day__date"><b><span class="day__date-long">${esc(fmtDay(date))}</span><span class="day__date-short" aria-hidden="true">${esc(fmtDayShort(date))}</span></b></span><span class="day__count">${pill}<span class="day__pill day__pill--count">${ms.length}&nbsp;${ms.length === 1 ? 'Spiel' : 'Spiele'}</span></span></h3>
+      <details class="day" data-day-key="${key}" data-day-default="${defOpen ? 'open' : 'closed'}"${open ? ' open' : ''}>
+        <summary class="day__head"><h3 class="day__date"><b><span class="day__date-long">${esc(fmtDay(date))}</span><span class="day__date-short" aria-hidden="true">${esc(fmtDayShort(date))}</span></b></h3><span class="day__count">${pill}<span class="day__pill day__pill--count">${ms.length}&nbsp;${ms.length === 1 ? 'Spiel' : 'Spiele'}</span><svg class="chev day__chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary>
         <ul class="match-list${withVenue ? ' has-venue' : ''}">
           ${ms.map((m) => matchRow(model, m, { venue: withVenue, info: info.get(m) })).join('')}
         </ul>
-      </section>`;
+      </details>`;
     }).join('') : emptyState(model, md, leagueFilter)}
   </section>`;
 }

@@ -1167,7 +1167,16 @@ tbody > .row:last-child .c-pos::before { bottom: 4px; border-bottom-right-radius
 .md-summary__val.md-summary__when { font-family: var(--font-ui); font-stretch: 100%; font-variation-settings: normal; font-weight: 700; font-size: 18px; }
 .md-summary__sep { color: var(--text-3); margin: 0 .35em; }
 
-.day { display: grid; gap: 10px; }
+.day { display: block; }
+.day > .match-list { margin-top: 10px; }
+/* Tageskopf ist zugleich Auf-/Zuklapp-Schalter (details/summary) */
+summary.day__head { cursor: pointer; list-style: none; -webkit-user-select: none; user-select: none; border-radius: 8px; }
+summary.day__head::-webkit-details-marker { display: none; }
+summary.day__head:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.day__date { margin: 0; font: inherit; }
+.day__chev { color: var(--text-3); flex: none; }
+@media (hover: hover) and (pointer: fine) { summary.day__head:hover .day__chev { color: var(--text); } }
+.day:not([open]) .day__date b { color: var(--text-2); }
 /* Angehefteter Tageskopf: deckend (keine durchscheinenden Zeilen), Linie nur im angehefteten Zustand */
 .day__head {
   position: sticky; top: calc(var(--header-h) - var(--header-shift) + var(--strip-stick, 0px)); z-index: 5;

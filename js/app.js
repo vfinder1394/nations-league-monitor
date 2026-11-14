@@ -2,7 +2,7 @@
 import { createStore, todayBerlin } from './data.js';
 import { renderTables } from './views/tables.js';
 import { renderGroupMatches } from './views/tables.js';
-import { renderSchedule, defaultMatchday } from './views/schedule.js';
+import { renderSchedule, defaultMatchday, rememberDayToggle } from './views/schedule.js';
 import { renderKnockout } from './views/knockout.js';
 import { renderTeam } from './views/team.js';
 import { esc, fmtRange, fmtShort, fmtShortY, fmtTime, installFlagFallback } from './ui.js';
@@ -693,6 +693,12 @@ function bind() {
     const tg = e.target.closest('[data-toggle-group]');
     if (tg) { toggleGroup(tg.dataset.toggleGroup, tg); return; }
   });
+  // Spieltage: Tage auf-/zuklappen – Wahl merken (übersteht Live-Aktualisierungen), Haftkanten neu prüfen
+  document.addEventListener('toggle', (e) => {
+    if (!(e.target instanceof HTMLDetailsElement) || !e.target.matches('.day')) return;
+    rememberDayToggle(e.target);
+    markStuckHeads();
+  }, true);
   scrim.addEventListener('click', () => closeTeam());
   panel.addEventListener('scroll', onPanelScroll, { passive: true });
   bindSheetDrag();
