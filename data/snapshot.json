@@ -2,8 +2,8 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-11-13T19:46:33Z",
- "asOf": "Live: 5 Spiel(e) laufen · 113/156 beendet",
+ "updatedAt": "2026-11-14T01:28:19Z",
+ "asOf": "Nach Spieltag 4 (122/156 Spiele beendet)",
  "dataSource": "uefa",
  "source": [
   "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/",
@@ -547,24 +547,23 @@
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "SRB",
        "away": "GER",
-       "hs": 0,
-       "as": 0,
-       "venue": "Stadion Rajko Mitić, Belgrad",
-       "minute": "1'"
+       "hs": 1,
+       "as": 3,
+       "venue": "Stadion Rajko Mitić, Belgrad"
       },
       {
        "id": "2047886",
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "NED",
        "away": "GRE",
-       "hs": null,
-       "as": null,
+       "hs": 7,
+       "as": 0,
        "venue": "Johan Cruijff ArenA, Amsterdam"
       },
       {
@@ -596,50 +595,50 @@
       {
        "pos": 1,
        "code": "NED",
-       "p": 4,
-       "w": 2,
+       "p": 5,
+       "w": 3,
        "d": 2,
        "l": 0,
-       "gf": 7,
+       "gf": 14,
        "ga": 5,
-       "gd": 2,
-       "pts": 8
+       "gd": 9,
+       "pts": 11
       },
       {
        "pos": 2,
        "code": "GRE",
-       "p": 4,
+       "p": 5,
        "w": 2,
        "d": 2,
-       "l": 0,
+       "l": 1,
        "gf": 5,
-       "ga": 3,
-       "gd": 2,
+       "ga": 10,
+       "gd": -5,
        "pts": 8
       },
       {
        "pos": 3,
        "code": "GER",
        "p": 5,
-       "w": 1,
-       "d": 3,
+       "w": 2,
+       "d": 2,
        "l": 1,
-       "gf": 3,
-       "ga": 2,
-       "gd": 1,
-       "pts": 6
+       "gf": 6,
+       "ga": 3,
+       "gd": 3,
+       "pts": 8
       },
       {
        "pos": 4,
        "code": "SRB",
        "p": 5,
        "w": 0,
-       "d": 1,
-       "l": 4,
-       "gf": 3,
-       "ga": 8,
-       "gd": -5,
-       "pts": 1
+       "d": 0,
+       "l": 5,
+       "gf": 4,
+       "ga": 11,
+       "gd": -7,
+       "pts": 0
       }
      ],
      "uefaId": "2014192",
@@ -650,12 +649,12 @@
        "GER",
        "SRB"
       ],
-      "played": 18,
+      "played": 20,
       "points": {
-       "NED": 8,
+       "NED": 11,
        "GRE": 8,
-       "GER": 6,
-       "SRB": 1
+       "GER": 8,
+       "SRB": 0
       }
      }
     },
@@ -1314,11 +1313,11 @@
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "SCO",
        "away": "MKD",
-       "hs": null,
-       "as": null,
+       "hs": 2,
+       "as": 1,
        "venue": "Hampden Park, Glasgow"
       },
       {
@@ -1326,11 +1325,11 @@
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "SVN",
        "away": "SUI",
-       "hs": null,
-       "as": null,
+       "hs": 0,
+       "as": 0,
        "venue": "Stadion Ljudski vrt, Maribor"
       },
       {
@@ -1362,49 +1361,49 @@
       {
        "pos": 1,
        "code": "SUI",
-       "p": 4,
+       "p": 5,
        "w": 4,
-       "d": 0,
+       "d": 1,
        "l": 0,
        "gf": 11,
        "ga": 1,
        "gd": 10,
-       "pts": 12
+       "pts": 13
       },
       {
        "pos": 2,
        "code": "SVN",
-       "p": 4,
+       "p": 5,
        "w": 2,
-       "d": 1,
+       "d": 2,
        "l": 1,
        "gf": 5,
        "ga": 3,
        "gd": 2,
-       "pts": 7
+       "pts": 8
       },
       {
        "pos": 3,
        "code": "SCO",
-       "p": 4,
-       "w": 1,
+       "p": 5,
+       "w": 2,
        "d": 1,
        "l": 2,
-       "gf": 3,
-       "ga": 5,
-       "gd": -2,
-       "pts": 4
+       "gf": 5,
+       "ga": 6,
+       "gd": -1,
+       "pts": 7
       },
       {
        "pos": 4,
        "code": "MKD",
-       "p": 4,
+       "p": 5,
        "w": 0,
        "d": 0,
-       "l": 4,
-       "gf": 0,
-       "ga": 10,
-       "gd": -10,
+       "l": 5,
+       "gf": 1,
+       "ga": 12,
+       "gd": -11,
        "pts": 0
       }
      ],
@@ -1416,11 +1415,11 @@
        "SCO",
        "MKD"
       ],
-      "played": 16,
+      "played": 20,
       "points": {
-       "SUI": 12,
-       "SVN": 7,
-       "SCO": 4,
+       "SUI": 13,
+       "SVN": 8,
+       "SCO": 7,
        "MKD": 0
       }
      }
@@ -2850,13 +2849,12 @@
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "SVK",
        "away": "FRO",
-       "hs": 0,
-       "as": 0,
-       "venue": "Košická futbalová aréna, Košice",
-       "minute": "1'"
+       "hs": 2,
+       "as": 2,
+       "venue": "Košická futbalová aréna, Košice"
       },
       {
        "id": "2047910",
@@ -2891,8 +2889,8 @@
        "w": 3,
        "d": 2,
        "l": 0,
-       "gf": 9,
-       "ga": 2,
+       "gf": 11,
+       "ga": 4,
        "gd": 7,
        "pts": 11
       },
@@ -2915,8 +2913,8 @@
        "w": 0,
        "d": 5,
        "l": 0,
-       "gf": 5,
-       "ga": 5,
+       "gf": 7,
+       "ga": 7,
        "gd": 0,
        "pts": 5
       },
@@ -3092,11 +3090,11 @@
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "BUL",
        "away": "ISL",
-       "hs": null,
-       "as": null,
+       "hs": 0,
+       "as": 5,
        "venue": "Christo-Botew-Stadion, Plowdiw"
       },
       {
@@ -3104,13 +3102,12 @@
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "LUX",
        "away": "EST",
        "hs": 0,
-       "as": 0,
-       "venue": "Stade de Luxembourg, Luxemburg",
-       "minute": "1'"
+       "as": 1,
+       "venue": "Stade de Luxembourg, Luxemburg"
       },
       {
        "id": "2047907",
@@ -3141,37 +3138,37 @@
       {
        "pos": 1,
        "code": "ISL",
-       "p": 4,
-       "w": 2,
+       "p": 5,
+       "w": 3,
        "d": 2,
        "l": 0,
-       "gf": 7,
+       "gf": 12,
        "ga": 1,
-       "gd": 6,
-       "pts": 8
+       "gd": 11,
+       "pts": 11
       },
       {
        "pos": 2,
        "code": "EST",
        "p": 5,
-       "w": 1,
-       "d": 4,
+       "w": 2,
+       "d": 3,
        "l": 0,
-       "gf": 2,
+       "gf": 3,
        "ga": 1,
-       "gd": 1,
-       "pts": 7
+       "gd": 2,
+       "pts": 9
       },
       {
        "pos": 3,
        "code": "BUL",
-       "p": 4,
+       "p": 5,
        "w": 1,
        "d": 1,
-       "l": 2,
+       "l": 3,
        "gf": 3,
-       "ga": 5,
-       "gd": -2,
+       "ga": 10,
+       "gd": -7,
        "pts": 4
       },
       {
@@ -3179,12 +3176,12 @@
        "code": "LUX",
        "p": 5,
        "w": 1,
-       "d": 1,
-       "l": 3,
+       "d": 0,
+       "l": 4,
        "gf": 2,
-       "ga": 7,
-       "gd": -5,
-       "pts": 4
+       "ga": 8,
+       "gd": -6,
+       "pts": 3
       }
      ],
      "uefaId": "2014202",
@@ -3195,12 +3192,12 @@
        "BUL",
        "LUX"
       ],
-      "played": 18,
+      "played": 20,
       "points": {
-       "ISL": 8,
-       "EST": 7,
+       "ISL": 11,
+       "EST": 9,
        "BUL": 4,
-       "LUX": 4
+       "LUX": 3
       }
      }
     }
@@ -3295,13 +3292,12 @@
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "AND",
        "away": "GIB",
-       "hs": 0,
+       "hs": 2,
        "as": 0,
-       "venue": "Estadi FAF, Encamp",
-       "minute": "1'"
+       "venue": "Estadi FAF, Encamp"
       },
       {
        "id": "2047908",
@@ -3331,23 +3327,23 @@
       },
       {
        "pos": 2,
-       "code": "GIB",
-       "p": 3,
-       "w": 0,
-       "d": 3,
-       "l": 0,
-       "gf": 1,
-       "ga": 1,
+       "code": "AND",
+       "p": 4,
+       "w": 1,
+       "d": 1,
+       "l": 2,
+       "gf": 3,
+       "ga": 3,
        "gd": 0,
-       "pts": 3
+       "pts": 4
       },
       {
        "pos": 3,
-       "code": "AND",
-       "p": 4,
+       "code": "GIB",
+       "p": 3,
        "w": 0,
        "d": 2,
-       "l": 2,
+       "l": 1,
        "gf": 1,
        "ga": 3,
        "gd": -2,
@@ -3358,14 +3354,14 @@
      "official": {
       "order": [
        "MLT",
-       "GIB",
-       "AND"
+       "AND",
+       "GIB"
       ],
       "played": 10,
       "points": {
        "MLT": 7,
-       "GIB": 3,
-       "AND": 2
+       "AND": 4,
+       "GIB": 2
       }
      }
     },
@@ -3454,13 +3450,12 @@
        "md": 5,
        "date": "2026-11-13",
        "kickoff": "2026-11-13T19:45:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "LIE",
        "away": "AZE",
        "hs": 0,
-       "as": 0,
-       "venue": "Rheinpark Stadion, Vaduz",
-       "minute": "2'"
+       "as": 1,
+       "venue": "Rheinpark Stadion, Vaduz"
       },
       {
        "id": "2047911",
@@ -3480,13 +3475,13 @@
        "pos": 1,
        "code": "AZE",
        "p": 4,
-       "w": 1,
-       "d": 3,
+       "w": 2,
+       "d": 2,
        "l": 0,
-       "gf": 2,
+       "gf": 3,
        "ga": 1,
-       "gd": 1,
-       "pts": 6
+       "gd": 2,
+       "pts": 8
       },
       {
        "pos": 2,
@@ -3505,12 +3500,12 @@
        "code": "LIE",
        "p": 3,
        "w": 0,
-       "d": 2,
-       "l": 1,
+       "d": 1,
+       "l": 2,
        "gf": 0,
-       "ga": 2,
-       "gd": -2,
-       "pts": 2
+       "ga": 3,
+       "gd": -3,
+       "pts": 1
       }
      ],
      "uefaId": "2014204",
@@ -3522,9 +3517,9 @@
       ],
       "played": 10,
       "points": {
-       "AZE": 6,
+       "AZE": 8,
        "LTU": 4,
-       "LIE": 2
+       "LIE": 1
       }
      }
     }
