@@ -2,8 +2,8 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-11-14T18:10:32Z",
- "asOf": "Live: 2 Spiel(e) laufen · 123/156 beendet",
+ "updatedAt": "2026-11-14T22:29:42Z",
+ "asOf": "Nach Spieltag 5 (130/156 Spiele beendet)",
  "dataSource": "uefa",
  "source": [
   "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/",
@@ -1054,24 +1054,23 @@
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T17:00:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "NOR",
        "away": "WAL",
-       "hs": 0,
-       "as": 0,
-       "venue": "Ullevaal Stadion, Oslo",
-       "minute": "53'"
+       "hs": 3,
+       "as": 1,
+       "venue": "Ullevaal Stadion, Oslo"
       },
       {
        "id": "2047892",
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "POR",
        "away": "DEN",
-       "hs": null,
-       "as": null,
+       "hs": 1,
+       "as": 4,
        "venue": "Estádio Municipal, Braga"
       },
       {
@@ -1103,50 +1102,50 @@
       {
        "pos": 1,
        "code": "POR",
-       "p": 4,
+       "p": 5,
        "w": 4,
        "d": 0,
-       "l": 0,
-       "gf": 9,
-       "ga": 4,
-       "gd": 5,
+       "l": 1,
+       "gf": 10,
+       "ga": 8,
+       "gd": 2,
        "pts": 12
       },
       {
        "pos": 2,
        "code": "DEN",
-       "p": 4,
-       "w": 2,
+       "p": 5,
+       "w": 3,
        "d": 0,
        "l": 2,
-       "gf": 7,
-       "ga": 7,
+       "gf": 11,
+       "ga": 8,
+       "gd": 3,
+       "pts": 9
+      },
+      {
+       "pos": 3,
+       "code": "NOR",
+       "p": 5,
+       "w": 2,
+       "d": 0,
+       "l": 3,
+       "gf": 9,
+       "ga": 9,
        "gd": 0,
        "pts": 6
       },
       {
-       "pos": 3,
+       "pos": 4,
        "code": "WAL",
        "p": 5,
        "w": 1,
-       "d": 1,
-       "l": 3,
-       "gf": 2,
-       "ga": 5,
-       "gd": -3,
-       "pts": 4
-      },
-      {
-       "pos": 4,
-       "code": "NOR",
-       "p": 5,
-       "w": 1,
-       "d": 1,
-       "l": 3,
-       "gf": 6,
+       "d": 0,
+       "l": 4,
+       "gf": 3,
        "ga": 8,
-       "gd": -2,
-       "pts": 4
+       "gd": -5,
+       "pts": 3
       }
      ],
      "uefaId": "2014194",
@@ -1154,15 +1153,15 @@
       "order": [
        "POR",
        "DEN",
-       "WAL",
-       "NOR"
+       "NOR",
+       "WAL"
       ],
-      "played": 18,
+      "played": 20,
       "points": {
        "POR": 12,
-       "DEN": 6,
-       "WAL": 4,
-       "NOR": 4
+       "DEN": 9,
+       "NOR": 6,
+       "WAL": 3
       }
      }
     }
@@ -1567,24 +1566,23 @@
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T17:00:00Z",
-       "status": "LIVE",
+       "status": "FINISHED",
        "home": "GEO",
        "away": "HUN",
        "hs": 0,
-       "as": 0,
-       "venue": "Mikheil Meskhi I Stadium, Tiflis",
-       "minute": "52'"
+       "as": 2,
+       "venue": "Mikheil Meskhi I Stadium, Tiflis"
       },
       {
        "id": "2047897",
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "NIR",
        "away": "UKR",
-       "hs": null,
-       "as": null,
+       "hs": 1,
+       "as": 0,
        "venue": "Windsor Park, Belfast"
       },
       {
@@ -1616,37 +1614,37 @@
       {
        "pos": 1,
        "code": "NIR",
-       "p": 4,
-       "w": 2,
+       "p": 5,
+       "w": 3,
        "d": 2,
        "l": 0,
-       "gf": 4,
+       "gf": 5,
        "ga": 0,
-       "gd": 4,
-       "pts": 8
+       "gd": 5,
+       "pts": 11
       },
       {
        "pos": 2,
        "code": "HUN",
        "p": 5,
-       "w": 2,
-       "d": 2,
+       "w": 3,
+       "d": 1,
        "l": 1,
-       "gf": 3,
+       "gf": 5,
        "ga": 2,
-       "gd": 1,
-       "pts": 8
+       "gd": 3,
+       "pts": 10
       },
       {
        "pos": 3,
        "code": "UKR",
-       "p": 4,
+       "p": 5,
        "w": 1,
        "d": 1,
-       "l": 2,
+       "l": 3,
        "gf": 2,
-       "ga": 5,
-       "gd": -3,
+       "ga": 6,
+       "gd": -4,
        "pts": 4
       },
       {
@@ -1654,12 +1652,12 @@
        "code": "GEO",
        "p": 5,
        "w": 0,
-       "d": 3,
-       "l": 2,
+       "d": 2,
+       "l": 3,
        "gf": 0,
-       "ga": 2,
-       "gd": -2,
-       "pts": 3
+       "ga": 4,
+       "gd": -4,
+       "pts": 2
       }
      ],
      "uefaId": "2014196",
@@ -1670,12 +1668,12 @@
        "UKR",
        "GEO"
       ],
-      "played": 18,
+      "played": 20,
       "points": {
-       "NIR": 8,
-       "HUN": 8,
+       "NIR": 11,
+       "HUN": 10,
        "UKR": 4,
-       "GEO": 3
+       "GEO": 2
       }
      }
     },
@@ -1833,11 +1831,11 @@
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "AUT",
        "away": "IRL",
-       "hs": null,
-       "as": null,
+       "hs": 1,
+       "as": 0,
        "venue": "Oberösterreich Arena, Linz"
       },
       {
@@ -1869,14 +1867,14 @@
       {
        "pos": 1,
        "code": "AUT",
-       "p": 4,
-       "w": 2,
+       "p": 5,
+       "w": 3,
        "d": 2,
        "l": 0,
-       "gf": 9,
+       "gf": 10,
        "ga": 5,
-       "gd": 4,
-       "pts": 8
+       "gd": 5,
+       "pts": 11
       },
       {
        "pos": 2,
@@ -1893,13 +1891,13 @@
       {
        "pos": 3,
        "code": "IRL",
-       "p": 4,
+       "p": 5,
        "w": 1,
        "d": 2,
-       "l": 1,
+       "l": 2,
        "gf": 6,
-       "ga": 4,
-       "gd": 2,
+       "ga": 5,
+       "gd": 1,
        "pts": 5
       },
       {
@@ -1923,9 +1921,9 @@
        "IRL",
        "ISR"
       ],
-      "played": 18,
+      "played": 20,
       "points": {
-       "AUT": 8,
+       "AUT": 11,
        "KOS": 6,
        "IRL": 5,
        "ISR": 3
@@ -2074,11 +2072,11 @@
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "ROU",
        "away": "POL",
-       "hs": null,
-       "as": null,
+       "hs": 2,
+       "as": 1,
        "venue": "Arena Națională, Bukarest"
       },
       {
@@ -2086,11 +2084,11 @@
        "md": 5,
        "date": "2026-11-14",
        "kickoff": "2026-11-14T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "SWE",
        "away": "BIH",
-       "hs": null,
-       "as": null,
+       "hs": 3,
+       "as": 2,
        "venue": "Strawberry Arena, Solna"
       },
       {
@@ -2122,50 +2120,50 @@
       {
        "pos": 1,
        "code": "SWE",
-       "p": 4,
-       "w": 3,
+       "p": 5,
+       "w": 4,
        "d": 1,
        "l": 0,
-       "gf": 7,
-       "ga": 3,
-       "gd": 4,
-       "pts": 10
+       "gf": 10,
+       "ga": 5,
+       "gd": 5,
+       "pts": 13
       },
       {
        "pos": 2,
        "code": "BIH",
-       "p": 4,
+       "p": 5,
        "w": 2,
        "d": 2,
-       "l": 0,
-       "gf": 6,
-       "ga": 3,
-       "gd": 3,
+       "l": 1,
+       "gf": 8,
+       "ga": 6,
+       "gd": 2,
        "pts": 8
       },
       {
        "pos": 3,
        "code": "POL",
-       "p": 4,
+       "p": 5,
        "w": 1,
        "d": 1,
-       "l": 2,
-       "gf": 7,
-       "ga": 4,
-       "gd": 3,
+       "l": 3,
+       "gf": 8,
+       "ga": 6,
+       "gd": 2,
        "pts": 4
       },
       {
        "pos": 4,
        "code": "ROU",
-       "p": 4,
-       "w": 0,
+       "p": 5,
+       "w": 1,
        "d": 0,
        "l": 4,
-       "gf": 3,
-       "ga": 13,
-       "gd": -10,
-       "pts": 0
+       "gf": 5,
+       "ga": 14,
+       "gd": -9,
+       "pts": 3
       }
      ],
      "uefaId": "2014198",
@@ -2176,12 +2174,12 @@
        "POL",
        "ROU"
       ],
-      "played": 16,
+      "played": 20,
       "points": {
-       "SWE": 10,
+       "SWE": 13,
        "BIH": 8,
        "POL": 4,
-       "ROU": 0
+       "ROU": 3
       }
      }
     }
