@@ -2,8 +2,8 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-11-15T16:24:59Z",
- "asOf": "Nach Spieltag 5 (132/156 Spiele beendet)",
+ "updatedAt": "2026-11-15T22:53:47Z",
+ "asOf": "Nach Spieltag 5 (138/156 Spiele beendet)",
  "dataSource": "uefa",
  "source": [
   "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/",
@@ -318,11 +318,11 @@
        "md": 6,
        "date": "2026-11-15",
        "kickoff": "2026-11-15T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "BEL",
        "away": "ITA",
-       "hs": null,
-       "as": null,
+       "hs": 4,
+       "as": 1,
        "venue": "Koning-Boudewijnstadion, Brüssel"
       },
       {
@@ -330,77 +330,77 @@
        "md": 6,
        "date": "2026-11-15",
        "kickoff": "2026-11-15T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "FRA",
        "away": "TUR",
-       "hs": null,
-       "as": null,
+       "hs": 2,
+       "as": 1,
        "venue": "Stade de Bordeaux, Bordeaux"
       }
      ],
      "table": [
       {
        "pos": 1,
-       "code": "ITA",
-       "p": 5,
-       "w": 3,
+       "code": "FRA",
+       "p": 6,
+       "w": 4,
        "d": 1,
        "l": 1,
-       "gf": 11,
+       "gf": 10,
        "ga": 6,
-       "gd": 5,
-       "pts": 10
+       "gd": 4,
+       "pts": 13
       },
       {
        "pos": 2,
-       "code": "FRA",
-       "p": 5,
-       "w": 3,
-       "d": 1,
-       "l": 1,
-       "gf": 8,
-       "ga": 5,
-       "gd": 3,
-       "pts": 10
+       "code": "BEL",
+       "p": 6,
+       "w": 4,
+       "d": 0,
+       "l": 2,
+       "gf": 12,
+       "ga": 7,
+       "gd": 5,
+       "pts": 12
       },
       {
        "pos": 3,
-       "code": "BEL",
-       "p": 5,
+       "code": "ITA",
+       "p": 6,
        "w": 3,
-       "d": 0,
+       "d": 1,
        "l": 2,
-       "gf": 8,
-       "ga": 6,
+       "gf": 12,
+       "ga": 10,
        "gd": 2,
-       "pts": 9
+       "pts": 10
       },
       {
        "pos": 4,
        "code": "TUR",
-       "p": 5,
+       "p": 6,
        "w": 0,
        "d": 0,
-       "l": 5,
-       "gf": 3,
-       "ga": 13,
-       "gd": -10,
+       "l": 6,
+       "gf": 4,
+       "ga": 15,
+       "gd": -11,
        "pts": 0
       }
      ],
      "uefaId": "2014191",
      "official": {
       "order": [
-       "ITA",
        "FRA",
        "BEL",
+       "ITA",
        "TUR"
       ],
-      "played": 20,
+      "played": 24,
       "points": {
+       "FRA": 13,
+       "BEL": 12,
        "ITA": 10,
-       "FRA": 10,
-       "BEL": 9,
        "TUR": 0
       }
      }
@@ -825,11 +825,11 @@
        "md": 6,
        "date": "2026-11-15",
        "kickoff": "2026-11-15T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "ESP",
        "away": "ENG",
-       "hs": null,
-       "as": null,
+       "hs": 2,
+       "as": 3,
        "venue": "Estadio Metropolitano, Madrid"
       },
       {
@@ -837,77 +837,77 @@
        "md": 6,
        "date": "2026-11-15",
        "kickoff": "2026-11-15T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "CRO",
        "away": "CZE",
-       "hs": null,
-       "as": null,
+       "hs": 2,
+       "as": 1,
        "venue": "Opus Arena, Osijek"
       }
      ],
      "table": [
       {
        "pos": 1,
-       "code": "ESP",
-       "p": 5,
+       "code": "ENG",
+       "p": 6,
        "w": 5,
        "d": 0,
-       "l": 0,
-       "gf": 14,
-       "ga": 5,
-       "gd": 9,
+       "l": 1,
+       "gf": 19,
+       "ga": 6,
+       "gd": 13,
        "pts": 15
       },
       {
        "pos": 2,
-       "code": "ENG",
-       "p": 5,
-       "w": 4,
+       "code": "ESP",
+       "p": 6,
+       "w": 5,
        "d": 0,
        "l": 1,
        "gf": 16,
-       "ga": 4,
-       "gd": 12,
-       "pts": 12
+       "ga": 8,
+       "gd": 8,
+       "pts": 15
       },
       {
        "pos": 3,
        "code": "CRO",
-       "p": 5,
-       "w": 1,
+       "p": 6,
+       "w": 2,
        "d": 0,
        "l": 4,
-       "gf": 5,
-       "ga": 16,
-       "gd": -11,
-       "pts": 3
+       "gf": 7,
+       "ga": 17,
+       "gd": -10,
+       "pts": 6
       },
       {
        "pos": 4,
        "code": "CZE",
-       "p": 5,
+       "p": 6,
        "w": 0,
        "d": 0,
-       "l": 5,
-       "gf": 2,
-       "ga": 12,
-       "gd": -10,
+       "l": 6,
+       "gf": 3,
+       "ga": 14,
+       "gd": -11,
        "pts": 0
       }
      ],
      "uefaId": "2014193",
      "official": {
       "order": [
-       "ESP",
        "ENG",
+       "ESP",
        "CRO",
        "CZE"
       ],
-      "played": 20,
+      "played": 24,
       "points": {
+       "ENG": 15,
        "ESP": 15,
-       "ENG": 12,
-       "CRO": 3,
+       "CRO": 6,
        "CZE": 0
       }
      }
@@ -2355,11 +2355,11 @@
        "md": 6,
        "date": "2026-11-15",
        "kickoff": "2026-11-15T17:00:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "BLR",
        "away": "ALB",
-       "hs": null,
-       "as": null,
+       "hs": 0,
+       "as": 2,
        "venue": "Illovszky Rudolf Stadion, Budapest"
       },
       {
@@ -2367,11 +2367,11 @@
        "md": 6,
        "date": "2026-11-15",
        "kickoff": "2026-11-15T17:00:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "FIN",
        "away": "SMR",
-       "hs": null,
-       "as": null,
+       "hs": 7,
+       "as": 2,
        "venue": "Bolt Arena, Helsinki"
       }
      ],
@@ -2379,49 +2379,49 @@
       {
        "pos": 1,
        "code": "ALB",
-       "p": 5,
-       "w": 4,
+       "p": 6,
+       "w": 5,
        "d": 0,
        "l": 1,
-       "gf": 10,
+       "gf": 12,
        "ga": 3,
-       "gd": 7,
-       "pts": 12
+       "gd": 9,
+       "pts": 15
       },
       {
        "pos": 2,
        "code": "BLR",
-       "p": 5,
+       "p": 6,
        "w": 3,
        "d": 1,
-       "l": 1,
+       "l": 2,
        "gf": 7,
-       "ga": 2,
-       "gd": 5,
+       "ga": 4,
+       "gd": 3,
        "pts": 10
       },
       {
        "pos": 3,
        "code": "FIN",
-       "p": 5,
-       "w": 2,
+       "p": 6,
+       "w": 3,
        "d": 1,
        "l": 2,
-       "gf": 9,
-       "ga": 4,
-       "gd": 5,
-       "pts": 7
+       "gf": 16,
+       "ga": 6,
+       "gd": 10,
+       "pts": 10
       },
       {
        "pos": 4,
        "code": "SMR",
-       "p": 5,
+       "p": 6,
        "w": 0,
        "d": 0,
-       "l": 5,
-       "gf": 1,
-       "ga": 18,
-       "gd": -17,
+       "l": 6,
+       "gf": 3,
+       "ga": 25,
+       "gd": -22,
        "pts": 0
       }
      ],
@@ -2433,11 +2433,11 @@
        "FIN",
        "SMR"
       ],
-      "played": 20,
+      "played": 24,
       "points": {
-       "ALB": 12,
+       "ALB": 15,
        "BLR": 10,
-       "FIN": 7,
+       "FIN": 10,
        "SMR": 0
       }
      }
