@@ -2,8 +2,8 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-11-14T22:29:42Z",
- "asOf": "Nach Spieltag 5 (130/156 Spiele beendet)",
+ "updatedAt": "2026-11-15T16:24:59Z",
+ "asOf": "Nach Spieltag 5 (132/156 Spiele beendet)",
  "dataSource": "uefa",
  "source": [
   "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/",
@@ -2608,11 +2608,11 @@
        "md": 6,
        "date": "2026-11-15",
        "kickoff": "2026-11-15T14:00:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "CYP",
        "away": "MNE",
-       "hs": null,
-       "as": null,
+       "hs": 1,
+       "as": 4,
        "venue": "Limassol-Stadion, Limassol"
       },
       {
@@ -2620,11 +2620,11 @@
        "md": 6,
        "date": "2026-11-15",
        "kickoff": "2026-11-15T14:00:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "LVA",
        "away": "ARM",
-       "hs": null,
-       "as": null,
+       "hs": 0,
+       "as": 0,
        "venue": "Skonto Stadions, Riga"
       }
      ],
@@ -2632,50 +2632,50 @@
       {
        "pos": 1,
        "code": "MNE",
-       "p": 5,
-       "w": 4,
+       "p": 6,
+       "w": 5,
        "d": 1,
        "l": 0,
-       "gf": 9,
-       "ga": 5,
-       "gd": 4,
-       "pts": 13
+       "gf": 13,
+       "ga": 6,
+       "gd": 7,
+       "pts": 16
       },
       {
        "pos": 2,
        "code": "CYP",
-       "p": 5,
+       "p": 6,
        "w": 2,
        "d": 2,
-       "l": 1,
-       "gf": 6,
-       "ga": 4,
-       "gd": 2,
+       "l": 2,
+       "gf": 7,
+       "ga": 8,
+       "gd": -1,
        "pts": 8
       },
       {
        "pos": 3,
        "code": "ARM",
-       "p": 5,
+       "p": 6,
        "w": 1,
-       "d": 2,
+       "d": 3,
        "l": 2,
        "gf": 5,
        "ga": 6,
        "gd": -1,
-       "pts": 5
+       "pts": 6
       },
       {
        "pos": 4,
        "code": "LVA",
-       "p": 5,
+       "p": 6,
        "w": 0,
-       "d": 1,
+       "d": 2,
        "l": 4,
        "gf": 3,
        "ga": 8,
        "gd": -5,
-       "pts": 1
+       "pts": 2
       }
      ],
      "uefaId": "2014200",
@@ -2686,12 +2686,12 @@
        "ARM",
        "LVA"
       ],
-      "played": 20,
+      "played": 24,
       "points": {
-       "MNE": 13,
+       "MNE": 16,
        "CYP": 8,
-       "ARM": 5,
-       "LVA": 1
+       "ARM": 6,
+       "LVA": 2
       }
      }
     },
