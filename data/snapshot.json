@@ -2,8 +2,8 @@
  "season": "2026/27",
  "competitionId": "2014",
  "seasonYear": "2027",
- "updatedAt": "2026-11-16T19:39:08Z",
- "asOf": "Nach Spieltag 5 (143/156 Spiele beendet)",
+ "updatedAt": "2026-11-17T03:56:30Z",
+ "asOf": "Nach Spieltag 5 (148/156 Spiele beendet)",
  "dataSource": "uefa",
  "source": [
   "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures-a/",
@@ -571,11 +571,11 @@
        "md": 6,
        "date": "2026-11-16",
        "kickoff": "2026-11-16T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "GER",
        "away": "NED",
-       "hs": null,
-       "as": null,
+       "hs": 5,
+       "as": 0,
        "venue": "Olympiastadion, Berlin"
       },
       {
@@ -583,77 +583,77 @@
        "md": 6,
        "date": "2026-11-16",
        "kickoff": "2026-11-16T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "GRE",
        "away": "SRB",
-       "hs": null,
-       "as": null,
+       "hs": 1,
+       "as": 0,
        "venue": "Panthessaliko, Volos"
       }
      ],
      "table": [
       {
        "pos": 1,
-       "code": "NED",
-       "p": 5,
+       "code": "GER",
+       "p": 6,
        "w": 3,
        "d": 2,
-       "l": 0,
-       "gf": 14,
-       "ga": 5,
-       "gd": 9,
+       "l": 1,
+       "gf": 11,
+       "ga": 3,
+       "gd": 8,
        "pts": 11
       },
       {
        "pos": 2,
-       "code": "GRE",
-       "p": 5,
-       "w": 2,
+       "code": "NED",
+       "p": 6,
+       "w": 3,
        "d": 2,
        "l": 1,
-       "gf": 5,
+       "gf": 14,
        "ga": 10,
-       "gd": -5,
-       "pts": 8
+       "gd": 4,
+       "pts": 11
       },
       {
        "pos": 3,
-       "code": "GER",
-       "p": 5,
-       "w": 2,
+       "code": "GRE",
+       "p": 6,
+       "w": 3,
        "d": 2,
        "l": 1,
        "gf": 6,
-       "ga": 3,
-       "gd": 3,
-       "pts": 8
+       "ga": 10,
+       "gd": -4,
+       "pts": 11
       },
       {
        "pos": 4,
        "code": "SRB",
-       "p": 5,
+       "p": 6,
        "w": 0,
        "d": 0,
-       "l": 5,
+       "l": 6,
        "gf": 4,
-       "ga": 11,
-       "gd": -7,
+       "ga": 12,
+       "gd": -8,
        "pts": 0
       }
      ],
      "uefaId": "2014192",
      "official": {
       "order": [
+       "GER",
        "NED",
        "GRE",
-       "GER",
        "SRB"
       ],
-      "played": 20,
+      "played": 24,
       "points": {
+       "GER": 11,
        "NED": 11,
-       "GRE": 8,
-       "GER": 8,
+       "GRE": 11,
        "SRB": 0
       }
      }
@@ -1337,11 +1337,11 @@
        "md": 6,
        "date": "2026-11-16",
        "kickoff": "2026-11-16T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "SUI",
        "away": "SCO",
-       "hs": null,
-       "as": null,
+       "hs": 4,
+       "as": 0,
        "venue": "Sitterstadion, St. Gallen"
       },
       {
@@ -1349,11 +1349,11 @@
        "md": 6,
        "date": "2026-11-16",
        "kickoff": "2026-11-16T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "MKD",
        "away": "SVN",
-       "hs": null,
-       "as": null,
+       "hs": 0,
+       "as": 3,
        "venue": "Toše-Proeski-Arena, Skopje"
       }
      ],
@@ -1361,49 +1361,49 @@
       {
        "pos": 1,
        "code": "SUI",
-       "p": 5,
-       "w": 4,
+       "p": 6,
+       "w": 5,
        "d": 1,
        "l": 0,
-       "gf": 11,
+       "gf": 15,
        "ga": 1,
-       "gd": 10,
-       "pts": 13
+       "gd": 14,
+       "pts": 16
       },
       {
        "pos": 2,
        "code": "SVN",
-       "p": 5,
-       "w": 2,
+       "p": 6,
+       "w": 3,
        "d": 2,
        "l": 1,
-       "gf": 5,
+       "gf": 8,
        "ga": 3,
-       "gd": 2,
-       "pts": 8
+       "gd": 5,
+       "pts": 11
       },
       {
        "pos": 3,
        "code": "SCO",
-       "p": 5,
+       "p": 6,
        "w": 2,
        "d": 1,
-       "l": 2,
+       "l": 3,
        "gf": 5,
-       "ga": 6,
-       "gd": -1,
+       "ga": 10,
+       "gd": -5,
        "pts": 7
       },
       {
        "pos": 4,
        "code": "MKD",
-       "p": 5,
+       "p": 6,
        "w": 0,
        "d": 0,
-       "l": 5,
+       "l": 6,
        "gf": 1,
-       "ga": 12,
-       "gd": -11,
+       "ga": 15,
+       "gd": -14,
        "pts": 0
       }
      ],
@@ -1415,10 +1415,10 @@
        "SCO",
        "MKD"
       ],
-      "played": 20,
+      "played": 24,
       "points": {
-       "SUI": 13,
-       "SVN": 8,
+       "SUI": 16,
+       "SVN": 11,
        "SCO": 7,
        "MKD": 0
       }
@@ -3304,11 +3304,11 @@
        "md": 6,
        "date": "2026-11-16",
        "kickoff": "2026-11-16T19:45:00Z",
-       "status": "UPCOMING",
+       "status": "FINISHED",
        "home": "GIB",
        "away": "MLT",
-       "hs": null,
-       "as": null,
+       "hs": 1,
+       "as": 1,
        "venue": "Europa Point Stadium, Gibraltar"
       }
      ],
@@ -3316,14 +3316,14 @@
       {
        "pos": 1,
        "code": "MLT",
-       "p": 3,
+       "p": 4,
        "w": 2,
-       "d": 1,
+       "d": 2,
        "l": 0,
-       "gf": 4,
-       "ga": 2,
+       "gf": 5,
+       "ga": 3,
        "gd": 2,
-       "pts": 7
+       "pts": 8
       },
       {
        "pos": 2,
@@ -3340,14 +3340,14 @@
       {
        "pos": 3,
        "code": "GIB",
-       "p": 3,
+       "p": 4,
        "w": 0,
-       "d": 2,
+       "d": 3,
        "l": 1,
-       "gf": 1,
-       "ga": 3,
+       "gf": 2,
+       "ga": 4,
        "gd": -2,
-       "pts": 2
+       "pts": 3
       }
      ],
      "uefaId": "2014203",
@@ -3357,11 +3357,11 @@
        "AND",
        "GIB"
       ],
-      "played": 10,
+      "played": 12,
       "points": {
-       "MLT": 7,
+       "MLT": 8,
        "AND": 4,
-       "GIB": 2
+       "GIB": 3
       }
      }
     },
